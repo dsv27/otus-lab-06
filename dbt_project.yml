@@ -1,8 +1,7 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'otus-lab-06'
+name: 'otus_lab_06'
 version: '1.0.0'
 config-version: 2
 
@@ -24,20 +23,6 @@ clean-targets:         # directories to be removed by `dbt clean`
     - "target"
     - "dbt_modules"
 
-default:
-  target: dev
-  outputs:
-    dev:
-      type: bigquery
-      method: service-account
-      project: otus-lab-06
-      dataset: lab06
-      threads: 1
-      keyfile: /home/dmitrii/prj/otus-lab-06/key.json
-      timeout_seconds: 600
-      location: EU
-      priority: interactive
-      retries: 3
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -46,7 +31,7 @@ default:
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  otus-lab-06:
+  otus_lab_06:
       # Applies to all files under models/example/
       ncaa_basketball:
           materialized: view

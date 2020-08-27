@@ -7,4 +7,4 @@ with team_colors as (
 )
 
 select *
-from source_data
+from team_colors
