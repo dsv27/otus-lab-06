@@ -34,4 +34,6 @@ models:
   otus_lab_06:
       # Applies to all files under models/example/
       ncaa_basketball:
-          materialized: view
+          materialized: table
+      marts:
+        materialized: view
