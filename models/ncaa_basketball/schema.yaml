@@ -1,0 +1,25 @@
+models:
+    - name: team_colors
+      description: "Hex color codes for the 351 current men's D1 basketball teams."
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: mbb_teams
+      description: "General information about the 351 current men's D1 basketball teams."
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: mbb_historical_teams_seasons
+      description: "Season record information for Men's Basketball, starting with the 1894-95 season. Each game is included twice, with one entry per team. Data provided by the NCAA."
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
